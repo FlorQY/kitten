@@ -1,0 +1,87 @@
+/*ingreso la imagen al div de la primera sección*/
+.landscape{
+  background-image: url('../assets/images/dawn.png');
+  background-repeat: no-repeat;
+  height: 4000px;
+  width: 4000px;
+  margin:250% 0 0 50%;
+}
+/*posiciono la imagen del gatito */
+.cat-happy{
+  width:12%;
+  height:7%;
+  padding-top: 6%;
+  padding-left: 4%;
+}
+.mobile{
+  max-width: 100%;
+}
+/*condiciono para que sea visible para pantallas de hasta 330px de ancho(móvil)*/
+@media handheld and (min-width:768px){
+  .mobile{
+    max-width: 100%;
+  }
+}
+/*ingreso la imagen al div de la segunda sección*/
+.night{
+  background-image: url('../assets/images/night.jpg');
+  background-repeat: no-repeat;
+  height: 60%;
+  width:60%;
+  /*margin-top:500px;*/
+}
+  /*posiciono la imagen del gatito */
+.cat-sleeping{
+  padding-left: 20%;
+  padding-top: 40%;
+}
+/*ingreso la imagen al div de la tercera sección*/
+.sunny{
+  background-image: url('../assets/images/sunny-day.jpg');
+  background-repeat: no-repeat;
+  height:4000px;
+  width: 4000px;
+  /*margin-top:500px;*/
+}
+/*posiciono la imagen del gatito */
+.cat-awake{
+  padding-left: 14%;
+  padding-top: 13%;
+  width: 15%;
+}
+.mobile {
+  display: none;
+}
+.tablet{
+  display:block;
+}
+.laptop{
+  displa:block;
+}
+@media (max-width: 768px){
+  .mobile {
+    display: block;
+  }
+  .tablet{
+    display:none;
+  }
+  .laptop{
+    display:none;
+  }
+}
+@media (min-width: 992px){
+  .tablet{
+    display:none;
+  }
+  .laptop{
+    display:block;
+  }
+}
+@media (max-width: 1200px){
+ .tablet{
+   display: block;
+ }
+ .laptop{
+    display:none;
+ }
+}
